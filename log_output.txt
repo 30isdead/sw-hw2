@@ -1,0 +1,9 @@
+[30] Tue May 20 13:38:56 2025 +0900 Fix: 클래스 다이어그램 어트리뷰트, 오퍼레이션 추가, 커뮤니케이션 다이어그램 수정 a2465e1
+[30] Tue May 20 06:11:38 2025 +0900 Feat: Analysis Class Diagram, Communication Diagram 추가 c59df2a
+[30] Tue May 20 06:11:17 2025 +0900 chore: 파일 정리 2cf9893
+[30] Tue May 20 02:49:00 2025 +0900 Feat: Usecase Description 추가 40f5f83
+[30] Tue May 20 02:48:47 2025 +0900 Update: Requirement List 내용 수정 0eaca79
+[30] Tue May 20 01:53:29 2025 +0900 Feat: UseCaseDiagram 추가 7ef689c
+[30] Tue May 20 01:53:16 2025 +0900 chore: 기존 UML 삭제 df754bd
+[30] Tue May 20 01:27:16 2025 +0900 Feat: RequirementList 수정 7db1c8e
+[30] Tue May 20 01:00:49 2025 +0900 🎉 Initial Commit ed8ac8e

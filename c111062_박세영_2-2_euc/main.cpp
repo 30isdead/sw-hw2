@@ -18,18 +18,18 @@
 #include "RentedBicycleList.h"
 #include "RentedBicycleListUI.h"
 
-// ��� ����
+// Constant definitions
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-// �Լ� ����
+// Function declarations
 void doTask();
 void program_exit(std::ofstream& out);
 
 int main()
 {
-  // ���� ��� ���� ���� ����
+  // Clear previous output file contents
   std::ofstream out(OUTPUT_FILE_NAME);
   out.close();
   
@@ -42,19 +42,19 @@ void doTask()
   std::ifstream in(INPUT_FILE_NAME);
   std::ofstream out(OUTPUT_FILE_NAME, std::ios::app);
   
-  // ������ ������ ������ ����
+  // Exit if file cannot be opened
   if (!in.is_open()) {
-    std::cerr << "�Է� ������ �� �� �����ϴ�." << std::endl;
+    std::cerr << "Cannot open input file." << std::endl;
     return;
   }
   
-  // �޴� �Ľ��� ���� level ������ ���� ����
+  // Variables for menu level parsing
   int menu_level_1 = 0, menu_level_2 = 0;
   bool is_program_exit = false;
     
   while(!is_program_exit && in >> menu_level_1 >> menu_level_2)
   {
-    // �޴� ���� �� �ش� ���� ����
+    // Menu selection and corresponding operation
     switch(menu_level_1)
     {
       case 1:
@@ -93,7 +93,7 @@ void doTask()
       case 6:
         if(menu_level_2 == 1) {
           is_program_exit = true;
-          out << "6.1. ����" << std::endl << std::endl;
+          out << "6.1. Exit" << std::endl << std::endl;
         }
         break;
     }

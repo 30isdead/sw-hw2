@@ -15,7 +15,7 @@ LogoutUI::LogoutUI(Logout* controller) : logout_control_(controller) {
  * @param out Output file stream for results.
  */
 void LogoutUI::startInterface(std::istream& in, std::ofstream& out) {
-  out << "2.2. 로그아웃" << std::endl;
+  out << "2.2. �α׾ƿ�" << std::endl;
   
   // Delegate all logic to controller
   std::string logoutUserId = logout_control_->processLogoutRequest();

@@ -18,18 +18,18 @@
 #include "RentedBicycleList.h"
 #include "RentedBicycleListUI.h"
 
-// 상수 선언
+// Constant definitions
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
-// 함수 선언
+// Function declarations
 void doTask();
 void program_exit(std::ofstream& out);
 
 int main()
 {
-  // 이전 출력 파일 내용 삭제
+  // Clear previous output file contents
   std::ofstream out(OUTPUT_FILE_NAME);
   out.close();
   
@@ -42,19 +42,19 @@ void doTask()
   std::ifstream in(INPUT_FILE_NAME);
   std::ofstream out(OUTPUT_FILE_NAME, std::ios::app);
   
-  // 파일이 열리지 않으면 종료
+  // Exit if file cannot be opened
   if (!in.is_open()) {
-    std::cerr << "입력 파일을 열 수 없습니다." << std::endl;
+    std::cerr << "Cannot open input file." << std::endl;
     return;
   }
   
-  // 메뉴 파싱을 위한 level 구분을 위한 변수
+  // Variables for menu level parsing
   int menu_level_1 = 0, menu_level_2 = 0;
   bool is_program_exit = false;
     
   while(!is_program_exit && in >> menu_level_1 >> menu_level_2)
   {
-    // 메뉴 구분 및 해당 연산 수행
+    // Menu selection and corresponding operation
     switch(menu_level_1)
     {
       case 1:
@@ -93,7 +93,7 @@ void doTask()
       case 6:
         if(menu_level_2 == 1) {
           is_program_exit = true;
-          out << "6.1. 종료" << std::endl << std::endl;
+          out << "6.1. ����" << std::endl << std::endl;
         }
         break;
     }

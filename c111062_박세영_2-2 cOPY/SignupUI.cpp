@@ -14,7 +14,7 @@ SignupUI::SignupUI(Signup* controller) : signup_control_(controller) {}
  * @param out Output file stream for results.
  */
 void SignupUI::startInterface(std::istream& in, std::ofstream& out) {
-  out << "1.1. È¸¿ø°¡ÀÔ" << std::endl;
+  out << "1.1. íšŒì›ê°€ìž…" << std::endl;
 
   // Get user input
   std::string id, password, phone_number;

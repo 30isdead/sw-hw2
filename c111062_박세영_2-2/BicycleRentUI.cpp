@@ -13,7 +13,7 @@ BicycleRentUI::BicycleRentUI(BicycleRent* controller) : bicycle_rent_control_(co
  * @param out Output stream for displaying results.
  */
 void BicycleRentUI::startInterface(std::istream& in, std::ofstream& out) {
-  out << "4.1. Bicycle Rent" << std::endl;
+  out << "4.1.자전거 대여" << std::endl;
   std::string id;
   in >> id;
   enterBicycleId(id, out);

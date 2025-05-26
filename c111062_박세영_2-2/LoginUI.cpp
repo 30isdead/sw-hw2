@@ -13,7 +13,7 @@ LoginUI::LoginUI(Login* controller) : login_control_(controller) {}
  * @param out Output file stream for results.
  */
 void LoginUI::startInterface(std::istream& in, std::ofstream& out) {
-  out << "2.1. ë¡œê·¸ì¸" << std::endl;
+  out << "2.1. ·Î±×ÀÎ" << std::endl;
   
   // Get user input
   std::string id, password;

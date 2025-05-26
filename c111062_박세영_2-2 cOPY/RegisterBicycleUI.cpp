@@ -16,7 +16,7 @@ RegisterBicycleUI::RegisterBicycleUI(RegisterBicycle* controller) : register_bic
  * @param out Output file stream for results.
  */
 void RegisterBicycleUI::startInterface(std::istream& in, std::ofstream& out) {
-  out << "3.1 ÀÚÀü°Å µî·Ï" << std::endl;
+  out << "3.1 ìžì „ê±° ë“±ë¡" << std::endl;
   
   
   // Get bicycle information input
@@ -49,5 +49,5 @@ void RegisterBicycleUI::enterBicycleInfo(const std::string& id, const std::strin
  */
 void RegisterBicycleUI::showRegisteredBicycle(const std::string& id, const std::string& product_name, std::ofstream& out) {
   out << "> " << id << " " << product_name << std::endl;
-  out << std::endl; // ºó ÁÙ Ãß°¡
+  out << std::endl; // ë¹ˆ ì¤„ ì¶”ê°€
 } 

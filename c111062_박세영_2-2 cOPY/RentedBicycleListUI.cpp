@@ -28,3 +28,4 @@ void RentedBicycleListUI::showRentedBicycles(const std::vector<const Bicycle*>& 
     out << "> " << bicycle->getId() << " " << bicycle->getProductName() << std::endl;
   }
   out << std::endl; 
+} 
